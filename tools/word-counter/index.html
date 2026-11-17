@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Word Counter – Count Words, Characters &amp; Reading Time</title>
+<meta name="description" content="Free online word counter: count words, characters, sentences and paragraphs, see reading time and top keywords. Works with Hindi too. Your text stays private.">
+<link rel="canonical" href="https://toolora.tooloraa.workers.dev/tools/word-counter/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta property="og:site_name" content="Toolora">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Word Counter – Count Words, Characters &amp; Reading Time">
+<meta property="og:description" content="Free online word counter: count words, characters, sentences and paragraphs, see reading time and top keywords. Works with Hindi too. Your text stays private.">
+<meta property="og:url" content="https://toolora.tooloraa.workers.dev/tools/word-counter/">
+<meta property="og:image" content="https://toolora.tooloraa.workers.dev/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Toolora – One Place. All Your Useful Tools.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Word Counter – Count Words, Characters &amp; Reading Time">
+<meta name="twitter:description" content="Free online word counter: count words, characters, sentences and paragraphs, see reading time and top keywords. Works with Hindi too. Your text stays private.">
+<meta name="twitter:image" content="https://toolora.tooloraa.workers.dev/img/og-image.png">
+<script src="/js/theme-init.js"></script>
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="modulepreload" href="/js/app.js">
+<link rel="modulepreload" href="/js/core/util.js">
+<link rel="modulepreload" href="/js/core/i18n.js">
+<link rel="modulepreload" href="/js/core/registry.js">
+<link rel="modulepreload" href="/js/core/logic.js">
+<link rel="modulepreload" href="/js/tools/word-counter.js">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Word Counter","url":"https://toolora.tooloraa.workers.dev/tools/word-counter/","description":"Free online word counter: count words, characters, sentences and paragraphs, see reading time and top keywords. Works with Hindi too. Your text stays private.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any (modern web browser)","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"inLanguage":["en","hi"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Toolora","url":"https://toolora.tooloraa.workers.dev/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://toolora.tooloraa.workers.dev/"},{"@type":"ListItem","position":2,"name":"Text Tools","item":"https://toolora.tooloraa.workers.dev/categories/text-tools/"},{"@type":"ListItem","position":3,"name":"Word Counter","item":"https://toolora.tooloraa.workers.dev/tools/word-counter/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does the word counter count words?","acceptedAnswer":{"@type":"Answer","text":"Any run of letters or digits separated by spaces or line breaks counts as one word, like in Microsoft Word and Google Docs. Hyphenated words such as “well-known” count as one, and standalone symbols are ignored."}},{"@type":"Question","name":"Is my text saved or uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. The text stays in your browser and is not stored or sent anywhere. Closing the tab clears it."}},{"@type":"Question","name":"Does it work for Hindi, Chinese or other languages?","acceptedAnswer":{"@type":"Answer","text":"Yes. Hindi and other space-separated languages are counted by words and characters as people see them. Chinese, Japanese and Thai are split into words using your browser’s language data."}},{"@type":"Question","name":"How is reading time calculated?","acceptedAnswer":{"@type":"Answer","text":"By dividing the word count by 200 words per minute for silent reading, and by 130 words per minute for speaking aloud. Real speeds vary by person and content."}},{"@type":"Question","name":"What is the difference between characters and characters without spaces?","acceptedAnswer":{"@type":"Answer","text":"The first counts everything, including spaces and line breaks. The second counts only visible characters. Different platforms use different rules, so check which one your limit refers to."}},{"@type":"Question","name":"Why do my character counts differ from another tool?","acceptedAnswer":{"@type":"Answer","text":"Tools disagree on how they count line breaks, emoji and combining characters. Toolora counts what you see: one emoji is one character, and a line break counts as one."}}]}</script>
+</head>
+<body data-tool="word-counter">
+<a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="Toolora home"><img src="/img/favicon.svg" width="34" height="34" alt=""><span>Toolora</span></a>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <div class="nav-search"><div class="search ">
+  <div class="search-box">
+    <svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-search"></use></svg>
+    <input class="search-input" id="nav-search" type="search" role="combobox" aria-expanded="false" aria-controls="nav-search-results" aria-autocomplete="list" autocomplete="off" spellcheck="false" placeholder="Search tools, e.g. “compress”" aria-label="Search tools" data-i18n-attr="placeholder:search.placeholder;aria-label:search.label">
+  </div>
+  <ul class="search-results" id="nav-search-results" role="listbox" aria-label="Search results" hidden></ul>
+</div></div>
+      <a href="/#popular" data-i18n="nav.tools">Tools</a>
+      <a href="/#categories" data-i18n="nav.categories">Categories</a>
+      <a href="/about/" data-i18n="nav.about">About</a>
+    </nav>
+    <div class="header-actions">
+      <div class="search header-search">
+  <div class="search-box">
+    <svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-search"></use></svg>
+    <input class="search-input" id="header-search" type="search" role="combobox" aria-expanded="false" aria-controls="header-search-results" aria-autocomplete="list" autocomplete="off" spellcheck="false" placeholder="Search tools, e.g. “compress”" aria-label="Search tools" data-i18n-attr="placeholder:search.placeholder;aria-label:search.label">
+  </div>
+  <ul class="search-results" id="header-search-results" role="listbox" aria-label="Search results" hidden></ul>
+</div>
+      <select id="lang-select" class="lang-select" aria-label="Language" data-i18n-attr="aria-label:lang.label"><option value="en" lang="en">English</option><option value="hi" lang="hi">हिन्दी</option></select>
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark mode" aria-pressed="false" data-i18n-attr="aria-label:theme.toggle"><span class="i-moon"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-moon"></use></svg></span><span class="i-sun"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-sun"></use></svg></span></button>
+      <button id="nav-toggle" class="icon-btn" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu" data-i18n-attr="aria-label:nav.menu"><svg class="icon i-menu" aria-hidden="true"><use href="/img/icons.svg#i-menu"></use></svg><svg class="icon i-x" aria-hidden="true"><use href="/img/icons.svg#i-x"></use></svg></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><ol>
+    <li><a href="/" data-i18n="nav.home">Home</a></li>
+    <li><a href="/categories/text-tools/" data-i18n="cat.text.name">Text Tools</a></li>
+    <li aria-current="page"><span data-i18n="tool.word-counter.name">Word Counter</span></li>
+  </ol></nav>
+  <header class="tool-hero">
+    <div class="tool-hero-top">
+      <span class="privacy-pill"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-shield"></use></svg><span data-i18n="tool.pill">Private · runs in your browser</span></span>
+      <button class="fav-inline" type="button" data-fav="word-counter" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-heart"></use></svg><span data-fav-label data-i18n="fav.save">Save to favorites</span></button>
+    </div>
+    <h1 data-i18n="tool.word-counter.name">Word Counter</h1>
+    <p class="lead" data-i18n="tool.word-counter.intro">Paste or type your text and see the counts update instantly. Nothing you write is saved or sent anywhere.</p>
+  </header>
+  <noscript><div class="noscript">Word Counter needs JavaScript to run in your browser. Please enable JavaScript and reload this page.</div></noscript>
+  <section class="tool-shell" aria-label="Word Counter">
+    <div class="pane-head">
+      <label class="label" for="text" data-i18n="wc.label">Your text</label>
+      <div class="btn-row">
+        <button class="btn btn-sm" type="button" id="btn-paste"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-clipboard"></use></svg><span data-i18n="common.paste">Paste</span></button>
+        <label class="btn btn-sm" for="file-input"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-upload"></use></svg><span data-i18n="common.upload">Upload</span></label>
+        <input type="file" id="file-input" class="visually-hidden" accept=".txt,.md,.csv,text/plain">
+        <button class="btn btn-sm" type="button" id="btn-copy" disabled><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-copy"></use></svg><span data-label data-i18n="wc.copyText">Copy text</span></button>
+        <button class="btn btn-sm" type="button" id="btn-download" disabled><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-download"></use></svg><span data-i18n="common.download">Download</span></button>
+        <button class="btn btn-sm btn-ghost" type="button" id="btn-clear"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-reset"></use></svg><span data-i18n="common.clear">Clear</span></button>
+      </div>
+    </div>
+    <textarea class="textarea wc-input" id="text" rows="10" spellcheck="true" placeholder="Start typing or paste your text here…" data-i18n-attr="placeholder:wc.placeholder"></textarea>
+    <div id="messages" role="alert" aria-live="assertive"></div>
+
+    <div class="stats" aria-live="polite">
+      <div class="stat stat--accent"><div class="num" id="s-words">0</div><div class="lbl" data-i18n="wc.words">Words</div></div>
+      <div class="stat stat--accent"><div class="num" id="s-chars">0</div><div class="lbl" data-i18n="wc.chars">Characters</div></div>
+      <div class="stat"><div class="num" id="s-nospace">0</div><div class="lbl" data-i18n="wc.nospace">Characters (no spaces)</div></div>
+      <div class="stat"><div class="num" id="s-sentences">0</div><div class="lbl" data-i18n="wc.sentences">Sentences</div></div>
+      <div class="stat"><div class="num" id="s-paragraphs">0</div><div class="lbl" data-i18n="wc.paragraphs">Paragraphs</div></div>
+      <div class="stat"><div class="num" id="s-reading">0 sec</div><div class="lbl" data-i18n="wc.reading">Reading time</div></div>
+      <div class="stat"><div class="num" id="s-speaking">0 sec</div><div class="lbl" data-i18n="wc.speaking">Speaking time</div></div>
+    </div>
+
+    <div class="wc-two">
+      <section aria-labelledby="meters-h">
+        <h2 class="panel-title" id="meters-h" data-i18n="wc.limits">Limits</h2>
+        <div class="meters">
+          <div class="meter" data-limit="280"><div class="meter-top"><span data-i18n="wc.limit.x">Post on X</span><span data-role="count">0 / 280</span></div><div class="meter-bar"><div class="meter-fill" data-role="fill"></div></div></div>
+          <div class="meter" data-limit="160"><div class="meter-top"><span data-i18n="wc.limit.meta">Meta description (≈)</span><span data-role="count">0 / 160</span></div><div class="meter-bar"><div class="meter-fill" data-role="fill"></div></div></div>
+          <div class="meter" data-limit="60"><div class="meter-top"><span data-i18n="wc.limit.title">SEO title (≈)</span><span data-role="count">0 / 60</span></div><div class="meter-bar"><div class="meter-fill" data-role="fill"></div></div></div>
+        </div>
+      </section>
+      <section aria-labelledby="kw-h">
+        <div class="pane-head">
+          <h2 class="panel-title" id="kw-h" data-i18n="wc.keywords">Most used words</h2>
+          <label class="check"><input type="checkbox" id="ignore-common" checked><span data-i18n="wc.ignore">Ignore common words</span></label>
+        </div>
+        <div id="keywords"></div>
+      </section>
+    </div>
+
+  </section>
+  <!-- Future ad placement (disabled): <div class="ad-slot" data-ad-slot="below-tool"></div> -->
+  <div class="content-grid">
+    <article class="prose">
+      <h2>How to use Word Counter</h2>
+      <ol class="steps"><li>Type or paste your text into the box — or use Upload to open a .txt file.</li><li>Read your counts, estimated reading and speaking time, and the most repeated words.</li><li>Check the limit meters if you are writing for X, a meta description or an SEO title. Use Copy, Download or Clear when you are done.</li></ol>
+      <h2>About Word Counter</h2>
+      <p>Word limits are everywhere: school essays, job applications, article briefs, product descriptions and social posts. This counter gives you the number that matters straight away, along with characters (with and without spaces), sentences and paragraphs.</p>
+<p>Words are counted the way word processors count them: any group of letters or digits separated by spaces or line breaks is one word, so “well-known” is one word and a lone “–” or “&amp;” is not counted. Languages that do not use spaces between words, such as Chinese, Japanese and Thai, are split into words using your browser’s built-in language rules. Characters are counted as people see them, so an emoji or a Hindi conjunct such as “क्ष” counts as one character.</p>
+<p>Reading time assumes an average adult reads about 200 words per minute and speaking time assumes about 130 words per minute, a comfortable pace for a speech or voice-over. These are estimates — difficult material or a slower delivery will take longer.</p>
+<p>The keyword list shows the words you use most often, which is a quick way to spot overused words in an essay or to check the main topic of an article. By default it ignores common English words such as “the” and “and”. The limit meters show your progress against typical limits: a post on X (280, approximate because links and some characters are weighted differently), a search-result meta description (about 160) and an SEO page title (about 60).</p>
+      <div class="privacy-note"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-shield"></use></svg><div><h2 data-i18n="tool.dataTitle">How your data is handled</h2><p>Your text is analysed by your browser as you type. It is not uploaded, saved or logged — when you close the page, it is gone.</p></div></div>
+      <h2>Word Counter – frequently asked questions</h2>
+      <div class="faq"><details><summary>How does the word counter count words?</summary><div><p>Any run of letters or digits separated by spaces or line breaks counts as one word, like in Microsoft Word and Google Docs. Hyphenated words such as “well-known” count as one, and standalone symbols are ignored.</p></div></details><details><summary>Is my text saved or uploaded?</summary><div><p>No. The text stays in your browser and is not stored or sent anywhere. Closing the tab clears it.</p></div></details><details><summary>Does it work for Hindi, Chinese or other languages?</summary><div><p>Yes. Hindi and other space-separated languages are counted by words and characters as people see them. Chinese, Japanese and Thai are split into words using your browser’s language data.</p></div></details><details><summary>How is reading time calculated?</summary><div><p>By dividing the word count by 200 words per minute for silent reading, and by 130 words per minute for speaking aloud. Real speeds vary by person and content.</p></div></details><details><summary>What is the difference between characters and characters without spaces?</summary><div><p>The first counts everything, including spaces and line breaks. The second counts only visible characters. Different platforms use different rules, so check which one your limit refers to.</p></div></details><details><summary>Why do my character counts differ from another tool?</summary><div><p>Tools disagree on how they count line breaks, emoji and combining characters. Toolora counts what you see: one emoji is one character, and a line break counts as one.</p></div></details></div>
+    </article>
+  </div>
+  <section class="related" aria-labelledby="related-h">
+    <div class="section-head"><h2 id="related-h" data-i18n="tool.related">Related tools</h2></div>
+    <div class="grid"><article class="card tool-card cat-developer" data-card="json-formatter" data-cat="developer">
+  <a class="card-link" href="/tools/json-formatter/">
+    <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-braces"></use></svg></span>
+    <h3 class="card-title" data-i18n="tool.json-formatter.name">JSON Formatter &amp; Validator</h3>
+    <p class="card-desc" data-i18n="tool.json-formatter.desc">Format, validate, minify and sort JSON with clear, line-accurate errors.</p>
+    <div class="card-meta"><span class="badge badge--primary" data-i18n="badge.new">New</span></div>
+  </a>
+  <button class="fav-btn" type="button" data-fav="json-formatter" aria-pressed="false" aria-label="Add JSON Formatter &amp; Validator to favorites"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-heart"></use></svg></button>
+</article>
+<article class="card tool-card cat-image" data-card="image-compressor" data-cat="image">
+  <a class="card-link" href="/tools/image-compressor/">
+    <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-image"></use></svg></span>
+    <h3 class="card-title" data-i18n="tool.image-compressor.name">Image Compressor</h3>
+    <p class="card-desc" data-i18n="tool.image-compressor.desc">Shrink JPG, PNG and WebP images and download them one by one or as a ZIP.</p>
+    <div class="card-meta"><span class="badge badge--primary" data-i18n="badge.new">New</span></div>
+  </a>
+  <button class="fav-btn" type="button" data-fav="image-compressor" aria-pressed="false" aria-label="Add Image Compressor to favorites"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-heart"></use></svg></button>
+</article>
+<article class="card tool-card cat-calculators" data-card="percentage-calculator" data-cat="calculators">
+  <a class="card-link" href="/tools/percentage-calculator/">
+    <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-percent"></use></svg></span>
+    <h3 class="card-title" data-i18n="tool.percentage-calculator.name">Percentage Calculator</h3>
+    <p class="card-desc" data-i18n="tool.percentage-calculator.desc">Work out percentages, percentage change, increases and decreases instantly.</p>
+    <div class="card-meta"><span class="badge badge--primary" data-i18n="badge.new">New</span></div>
+  </a>
+  <button class="fav-btn" type="button" data-fav="percentage-calculator" aria-pressed="false" aria-label="Add Percentage Calculator to favorites"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-heart"></use></svg></button>
+</article></div>
+  </section>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/"><img src="/img/favicon.svg" width="34" height="34" alt=""><span>Toolora</span></a>
+        <p class="footer-blurb" data-i18n="footer.blurb">Free, fast and private tools for everyday tasks. No signup, no uploads.</p>
+      </div>
+      <div>
+        <h2 data-i18n="footer.tools">Tools</h2>
+        <ul><li><a href="/tools/image-compressor/" data-i18n="tool.image-compressor.name">Image Compressor</a></li><li><a href="/tools/json-formatter/" data-i18n="tool.json-formatter.name">JSON Formatter &amp; Validator</a></li><li><a href="/tools/percentage-calculator/" data-i18n="tool.percentage-calculator.name">Percentage Calculator</a></li><li><a href="/tools/image-resizer/" data-i18n="tool.image-resizer.name">Image Resizer</a></li><li><a href="/tools/word-counter/" data-i18n="tool.word-counter.name">Word Counter</a></li><li><a href="/tools/jpg-to-pdf/" data-i18n="tool.jpg-to-pdf.name">JPG to PDF Converter</a></li></ul>
+      </div>
+      <div>
+        <h2 data-i18n="footer.categories">Categories</h2>
+        <ul><li><a href="/categories/image-tools/" data-i18n="cat.image.name">Image Tools</a></li><li><a href="/categories/pdf-tools/" data-i18n="cat.pdf.name">PDF Tools</a></li><li><a href="/categories/calculators/" data-i18n="cat.calculators.name">Calculators</a></li><li><a href="/categories/developer-tools/" data-i18n="cat.developer.name">Developer Tools</a></li><li><a href="/categories/text-tools/" data-i18n="cat.text.name">Text Tools</a></li></ul>
+      </div>
+      <div>
+        <h2 data-i18n="footer.company">Company</h2>
+        <ul>
+          <li><a href="/about/" data-i18n="nav.about">About</a></li>
+          <li><a href="/contact/" data-i18n="footer.contact">Contact</a></li>
+          <li><a href="/privacy/" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="/terms/" data-i18n="footer.terms">Terms of Use</a></li>
+          <li><button class="link" type="button" data-open-feedback data-email="hello@toolora.example" data-i18n="footer.feedback">Send feedback</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Toolora. <span data-i18n="footer.rights">Free to use. Your files stay on your device.</span></span>
+      <span data-i18n="footer.tagline">One Place. All Your Useful Tools.</span>
+    </div>
+  </div>
+</footer>
+<dialog id="feedback-dialog" aria-labelledby="fb-title">
+  <form class="dialog-body" data-email="hello@toolora.example">
+    <div class="dialog-head">
+      <h2 id="fb-title" data-i18n="fb.title">Send feedback</h2>
+      <button class="icon-btn" type="button" id="fb-close" aria-label="Close" data-i18n-attr="aria-label:common.close"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-x"></use></svg></button>
+    </div>
+    <p data-i18n="fb.intro">Found a bug or have an idea for a tool? Tell us. This opens your email app — nothing is collected or sent from this page.</p>
+    <div class="field">
+      <label class="label" for="fb-type" data-i18n="fb.type">Type</label>
+      <select class="select" id="fb-type">
+        <option value="Suggestion" data-i18n="fb.suggestion">Suggestion or new tool idea</option>
+        <option value="Bug report" data-i18n="fb.bug">Bug report</option>
+        <option value="Other" data-i18n="fb.other">Something else</option>
+      </select>
+    </div>
+    <div class="field">
+      <label class="label" for="fb-message" data-i18n="fb.message">Your message</label>
+      <textarea class="textarea" id="fb-message" rows="5" maxlength="2000" required></textarea>
+    </div>
+    <div class="alert alert--ok" id="fb-fallback" hidden>
+      <svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-mail"></use></svg>
+      <div><span data-i18n="fb.fallback">If your email app did not open, copy the message and send it to</span> <strong>hello@toolora.example</strong>.<br><button class="btn btn-sm" type="button" id="fb-copy"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-copy"></use></svg><span data-i18n="fb.copy">Copy message</span></button></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-primary" type="submit"><svg class="icon" aria-hidden="true"><use href="/img/icons.svg#i-mail"></use></svg><span data-i18n="fb.send">Send by email</span></button>
+    </div>
+  </form>
+</dialog>
+<div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+<script type="module" src="/js/app.js"></script>
+<script type="module" src="/js/tools/word-counter.js"></script>
+</body>
+</html>
